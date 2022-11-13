@@ -1,0 +1,10 @@
+[Unit]
+Description=Proxy service for stable diffusion server
+
+[Service]
+WorkingDirectory=/opt/stable-diffusion-server/proxy
+ExecStart=/opt/stable-diffusion-server/proxy/server
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
